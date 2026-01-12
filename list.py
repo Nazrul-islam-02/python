@@ -23,8 +23,20 @@ nums.append(10)
 # print(nums)
 # nums.pop()
 
-nums.pop(0)
+# nums.pop(0)
+# print(nums)
+
+
+# del nums[1:]
+# nums.extend(99,23,32,34)
 print(nums)
 
+# print(min(nums))
+
+max = max(nums)
+# print(max)
+
+# nums.sort()
+# print(nums)
 
 
