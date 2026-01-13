@@ -38,4 +38,21 @@ a = a^b
 # print(a)
 # print(b)
 
-print(x)
+# print(x)
+
+
+# p = int(input("enter value: "))
+
+# print(p+p)
+
+p = "101"
+q = "1"
+
+p = int(p,2)
+q = int(q,2)
+
+z = p+q
+print(bin(z))
+
+
+
