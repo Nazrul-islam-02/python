@@ -80,9 +80,31 @@
 
 
 
-##### filter even nummer
-nums = [10,130,4,5,55,89,90,100,2,103,10]
+# ##### filter even nummer
+# nums = [10,130,4,5,55,89,90,100,2,103,10]
 
-for i,value in enumerate(nums):
-    if value% 3 == 0:
-        print(i, value)
+# for i,value in enumerate(nums):
+#     if value% 3 == 0:
+#         print(i, value)
+
+
+
+
+# then he
+
+alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+
+print(alpha[0])
+
+str = "NAZRUL"
+newStr = ""
+
+for i in range(len(str)):
+    for j in range(len(alpha)):
+        if(str[i] == alpha[j]):
+            # print(j)
+            newStr = newStr + alpha[(j+3)%26]
+            break
+
+
+print(newStr)
