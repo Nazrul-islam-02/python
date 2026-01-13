@@ -56,12 +56,12 @@
 # # # # # # # # #
 
 
-for i in range(0,10):
-    for j in range(i,10):
-        print(end=" ")
-    for j in range(i):
-        print("#",end=" ")
-    print("")
+# for i in range(0,10):
+#     for j in range(i,10):
+#         print(end=" ")
+#     for j in range(i):
+#         print("#",end=" ")
+#     print("")
 
 
 # output
@@ -75,3 +75,14 @@ for i in range(0,10):
    # # # # # # #
   # # # # # # # #
  # # # # # # # # #
+
+
+
+
+
+##### filter even nummer
+nums = [10,130,4,5,55,89,90,100,2,103,10]
+
+for i,value in enumerate(nums):
+    if value% 3 == 0:
+        print(i, value)
