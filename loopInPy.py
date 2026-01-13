@@ -92,19 +92,35 @@
 
 # then he
 
-alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+# alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 
-print(alpha[0])
+# print(alpha[0])
 
-str = "NAZRUL"
-newStr = ""
+# str = "NAZRUL"
+# newStr = ""
 
-for i in range(len(str)):
-    for j in range(len(alpha)):
-        if(str[i] == alpha[j]):
-            # print(j)
-            newStr = newStr + alpha[(j+3)%26]
-            break
+# for i in range(len(str)):
+#     for j in range(len(alpha)):
+#         if(str[i] == alpha[j]):
+#             # print(j)
+#             newStr = newStr + alpha[(j+3)%26]
+#             break
 
 
-print(newStr)
+# print(newStr)
+
+num = 100001
+
+import math
+
+r = int(math.sqrt(num)) + 1
+# print(r)
+
+for i in range(2,r):
+    if num % i == 0:
+        print("this number is divisile by ",i)
+        print(num, " is not prime Number")
+        
+        break
+else:
+    print(num," is prime number")
