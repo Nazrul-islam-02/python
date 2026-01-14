@@ -44,26 +44,53 @@ b = np.array([[1, -2], [3.9, 4]])
 # print(arr)
 
 
-A = np.array([
-    [1,2,3,4],
-    [2,3,4,5],
-    [2,3,4,5],
-    [2,3,4,5],
-])
+# A = np.array([
+#     [1,2,3,4],
+#     [2,3,4,5],
+#     [2,3,4,5],
+#     [2,3,4,5],
+# ])
 
 
-A = np.matrix('1,2,3;4,5,6;7,8,1')
-B = np.matrix('1,2,3;4,5,6;7,8,9')
-# B = np.matrix('1,2,3;5,6,7;8,9,1')
+# A = np.matrix('1,2,3;4,5,6;7,8,1')
+# B = np.matrix('1,2,3;4,5,6;7,8,9')
+# # B = np.matrix('1,2,3;5,6,7;8,9,1')
 
-# print(np.diagonal(A))
+# # print(np.diagonal(A))
 
-# print(A.max())
+# # print(A.max())
 
-# print(A)
-# print(B)
-print(A*B)
+# # print(A)
+# # print(B)
+# print(A*B)
 
-print(A+B)
+# print(A+B)
 
-print(A-B)
+# print(A-B)
+
+
+
+def add(a,b):
+    return a+b
+
+
+# result = add(29,39)
+# result = add(29,3)
+# print(result)
+
+
+# def person(age,name,dept):
+#     print("name: ",name)
+#     print("Dept",dept)
+
+
+# person(name = 'Nazrul', dept = 'ICT', age = 23)
+
+
+def person(**data):
+    print(data['name'])
+    print(data['age'])
+    print(data['dept'])
+
+
+person(name = 'Nazrul',age = 34,dept = 'ICT')
