@@ -32,7 +32,7 @@ b = np.array([[1, -2], [3.9, 4]])
 
 
 
-arr = np.eye(5)
+# arr = np.eye(5)
 
 # [[1. 0. 0. 0. 0.]
 #  [0. 1. 0. 0. 0.]
@@ -41,6 +41,29 @@ arr = np.eye(5)
 #  [0. 0. 0. 0. 1.]]
 
 
+# print(arr)
 
-print(arr)
 
+A = np.array([
+    [1,2,3,4],
+    [2,3,4,5],
+    [2,3,4,5],
+    [2,3,4,5],
+])
+
+
+A = np.matrix('1,2,3;4,5,6;7,8,1')
+B = np.matrix('1,2,3;4,5,6;7,8,9')
+# B = np.matrix('1,2,3;5,6,7;8,9,1')
+
+# print(np.diagonal(A))
+
+# print(A.max())
+
+# print(A)
+# print(B)
+print(A*B)
+
+print(A+B)
+
+print(A-B)
