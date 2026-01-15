@@ -43,4 +43,6 @@ from functools import reduce
 
 nums = [1, 2, 3, 4]
 sum = reduce(lambda a,b: a+b, nums)
-print(sum)
+# print(sum)
+
+
