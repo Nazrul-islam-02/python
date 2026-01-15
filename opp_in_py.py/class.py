@@ -1,17 +1,46 @@
 
+# class Student:
+#     roll = ""
+#     cgpa = ""
+
+
+# Zim = Student()
+# Zim.roll = 101
+# Zim.cgpa = 3.54
+
+# Rakib = Student()
+# Rakib.roll = 102
+# Rakib.cgpa = 3.50
+# Rakib.cgpa = 3.50
+
+# print(f"Roll: {Zim.roll} and CGPA: {Zim.cgpa}")
+# print(f"Roll: {Rakib.roll} and CGPA: {Rakib.cgpa}")
+
+
+
 class Student:
     roll = ""
     cgpa = ""
+    name =""
+
+    def set_value(self, roll, cgpa,name):
+        self.roll = roll
+        self.cgpa = cgpa
+        self.name = name
+
+    def display(self):
+        print(f"Name:{self.name} Roll: {self.roll} and CGPA: {self.cgpa}")
+
 
 
 Zim = Student()
-Zim.roll = 101
-Zim.cgpa = 3.54
+Zim.set_value(name = 'Zim',roll = 101, cgpa = 3.56)
+name = Zim.display()
 
-Rakib = Student()
-Rakib.roll = 102
-Rakib.cgpa = 3.50
-Rakib.cgpa = 3.50
+Kim = Student()
+Kim.set_value(name = "kim", roll = 102, cgpa = 3.50)
+Kim.display()
 
-print(f"Roll: {Zim.roll} and CGPA: {Zim.cgpa}")
-print(f"Roll: {Rakib.roll} and CGPA: {Rakib.cgpa}")
+Rim = Student()
+Rim.set_value(name = "Rim", roll = 103, cgpa = 3.90)
+Rim.display()
