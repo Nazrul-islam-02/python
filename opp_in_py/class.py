@@ -23,7 +23,7 @@ class Student:
     cgpa = ""
     name =""
 
-    def set_value(self, roll, cgpa,name):
+    def __init__(self, roll, cgpa,name):
         self.roll = roll
         self.cgpa = cgpa
         self.name = name
@@ -33,14 +33,19 @@ class Student:
 
 
 
-Zim = Student()
-Zim.set_value(name = 'Zim',roll = 101, cgpa = 3.56)
+Zim = Student(name = 'Zim',roll = 101, cgpa = 3.56)
 name = Zim.display()
 
-Kim = Student()
-Kim.set_value(name = "kim", roll = 102, cgpa = 3.50)
+# Kim = Student()
+# Kim.set_value(name = "kim", roll = 102, cgpa = 3.50)
+# Kim.display()
+
+# Rim = Student()
+# Rim.set_value(name = "Rim", roll = 103, cgpa = 3.90)
+# Rim.display()
+
+Kim = Student(name = "kim", roll = 102, cgpa = 3.50)
 Kim.display()
 
-Rim = Student()
-Rim.set_value(name = "Rim", roll = 103, cgpa = 3.90)
+Rim = Student(name = "Rim", roll = 103, cgpa = 3.90)
 Rim.display()
